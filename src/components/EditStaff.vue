@@ -1,7 +1,7 @@
 <template>
   <div class="edit-wrapper">
     <h1>Redigera användare</h1>
-    <form @submit.prevent="editStaff">
+    <form @submit.prevent>
       <input type="text" v-model="employee.name" />
       <input type="text" v-model="employee.role" />
       <input type="text" v-model="employee.phone" />
