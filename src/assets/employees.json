@@ -1,0 +1,25 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "Aleksander Dimitrijevic",
+      "role": "Fullstack",
+      "phone": "076 582 50 56",
+      "email": "aleksander.dimitrijevic@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Elam Nabi",
+      "role": "Fullstack",
+      "phone": "076 987 76 65",
+      "email": "elam.nabi@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Max Aakre",
+      "role": "Fullstack",
+      "phone": "076 123 45 67",
+      "email": "max.aakre@gmail.com"
+    }
+  ]
+}
