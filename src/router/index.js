@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import StaffDetail from "../components/StaffDetail";
+import EditStaff from "../components/EditStaff";
 
 Vue.use(VueRouter);
 
@@ -15,15 +16,13 @@ const routes = [
         path: "/employee/:id",
         name: "employee-details",
         component: StaffDetail,
-        props: true,
-        children: [
-          {
-            path: "/employee/:id/edit",
-            name: "employee-edit",
-            component: StaffDetail,
-            props: true
-          }
-        ]
+        props: true
+      },
+      {
+        path: "/employee/:id/edit",
+        name: "edit-employee",
+        component: EditStaff,
+        props: true
       }
     ]
   }

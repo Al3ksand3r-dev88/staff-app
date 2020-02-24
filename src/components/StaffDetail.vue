@@ -12,7 +12,7 @@
     </ul>
     <router-link
       class="edit"
-      :to="{ name: 'employee-edit', params: { id: employee.id } }"
+      :to="{ name: 'edit-employee', params: { id: employee.id, employee } }"
       >Redigera användare <i class="fas fa-pen"></i
     ></router-link>
   </div>
@@ -41,8 +41,9 @@ export default {
 
   a.edit {
     cursor: pointer;
-    margin-top: 4rem;
+    display: block;
     color: green;
+    margin-top: 4rem;
   }
 
   h3 {
@@ -52,7 +53,7 @@ export default {
   }
 
   ul {
-    width: 70%;
+    width: 80%;
     display: block;
     list-style: none;
     text-align: right;
