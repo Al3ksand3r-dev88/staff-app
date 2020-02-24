@@ -1,12 +1,12 @@
 <template>
   <div class="edit-wrapper">
     <h1>Redigera användare</h1>
-    <form>
+    <form @submit.prevent="editStaff">
       <input type="text" v-model="employee.name" />
       <input type="text" v-model="employee.role" />
       <input type="text" v-model="employee.phone" />
       <input type="text" v-model="employee.email" />
-      <button @click.prevent>Spara</button>
+      <button>Spara</button>
     </form>
   </div>
 </template>
