@@ -1,14 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
-import json from "./assets/employees.json";
+import store from "./store/store";
 
 Vue.config.productionTip = false;
 
 new Vue({
   router,
-  data: () => ({
-    employees: json.employees
-  }),
+  store,
   render: h => h(App)
 }).$mount("#app");

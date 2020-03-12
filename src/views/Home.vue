@@ -10,10 +10,12 @@
           name: 'employee-details',
           params: { id: employee.id, employee }
         }"
-        ><img :src="require('../assets/placeholder.jpg')" />{{
-          employee.name
-        }}</router-link
       >
+        <img :src="require('../assets/placeholder.jpg')" />
+        {{
+        employee.name
+        }}
+      </router-link>
     </ul>
     <router-view />
   </div>
@@ -24,7 +26,7 @@ export default {
   name: "Home",
   computed: {
     employees() {
-      return this.$root.$data.employees;
+      return this.$store.state.employees;
     }
   }
 };
